@@ -30,6 +30,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.RUBY_BLOCK.get());
                         output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
+                        output.accept(ModBlocks.RUBY_ORE.get());
+                        output.accept(ModBlocks.RUBY_DEEPSLATE_ORE.get());
                     })
                     .build());
 

@@ -1,8 +1,10 @@
 package net.wubwub.tutorialmod.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,6 +27,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
+            () -> new DropExperienceBlock(UniformInt.of(90, 100), BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RUBY_DEEPSLATE_ORE = registerBlock("ruby_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(200, 300), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
