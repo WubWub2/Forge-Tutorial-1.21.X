@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wubwub.tutorialmod.block.ModBlocks;
+import net.wubwub.tutorialmod.item.ModCreativeModeTabs;
 import net.wubwub.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -35,6 +36,8 @@ public class TutorialMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

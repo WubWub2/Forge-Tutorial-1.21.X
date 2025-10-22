@@ -3,5 +3,8 @@
   "item.tutorialmod.raw_ruby" : "Raw Ruby",
 
   "block.tutorialmod.ruby_block" : "Block of Ruby",
-  "block.tutorialmod.raw_ruby_block" : "Block of Raw Ruby"
+  "block.tutorialmod.raw_ruby_block" : "Block of Raw Ruby",
+
+  "creativetab.tutorialmod.ruby_items": "Ruby Items",
+  "creativetab.tutorialmod.ruby_blocks": "Ruby Blocks"
 }
