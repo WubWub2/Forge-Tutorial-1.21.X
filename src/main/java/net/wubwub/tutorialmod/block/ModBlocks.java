@@ -1,5 +1,7 @@
 package net.wubwub.tutorialmod.block;
 
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -7,11 +9,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.common.data.SoundDefinition;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wubwub.tutorialmod.TutorialMod;
+import net.wubwub.tutorialmod.block.custom.MagicBlock;
 import net.wubwub.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -35,6 +39,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_DEEPSLATE_ORE = registerBlock("ruby_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(200, 300), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> MAGIC_ITEM = registerBlock("magic_item",
+            () -> new MagicBlock(BlockBehaviour.Properties.of()
+                    .strength(1f).sound(SoundType.TRIAL_SPAWNER)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

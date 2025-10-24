@@ -20,6 +20,11 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.RUBY.get());
                         output.accept(ModItems.RAW_RUBY.get());
+
+                        output.accept(ModItems.CHISEL.get());
+
+                        output.accept(ModItems.KOHLRABI.get());
+                        output.accept(ModItems.JUNK.get());
                     })
                     .build());
 
@@ -32,6 +37,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_RUBY_BLOCK.get());
                         output.accept(ModBlocks.RUBY_ORE.get());
                         output.accept(ModBlocks.RUBY_DEEPSLATE_ORE.get());
+
+                        output.accept(ModBlocks.MAGIC_ITEM.get());
                     })
                     .build());
 

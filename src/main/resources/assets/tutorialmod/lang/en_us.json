@@ -1,12 +1,17 @@
 {
   "item.tutorialmod.ruby" : "Ruby",
   "item.tutorialmod.raw_ruby" : "Raw Ruby",
+  "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.kohlrabi": "Kohlrabi",
+  "item.tutorialmod.junk": "Junk",
 
   "block.tutorialmod.ruby_block" : "Block of Ruby",
   "block.tutorialmod.raw_ruby_block" : "Block of Raw Ruby",
 
   "block.tutorialmod.ruby_ore" : "Ruby Ore",
   "block.tutorialmod.ruby_deepslate_ore" : "Ruby Deepslate Ore",
+
+  "block.tutorialmod.magic_item": "Magic Item",
 
   "creativetab.tutorialmod.ruby_items": "Ruby Items",
   "creativetab.tutorialmod.ruby_blocks": "Ruby Blocks"
