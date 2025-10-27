@@ -14,5 +14,10 @@
   "block.tutorialmod.magic_item": "Magic Item",
 
   "creativetab.tutorialmod.ruby_items": "Ruby Items",
-  "creativetab.tutorialmod.ruby_blocks": "Ruby Blocks"
+  "creativetab.tutorialmod.ruby_blocks": "Ruby Blocks",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite §9MAGICAL§r",
+  "tooltip.tutorialmod.chisel.shift_down": "This Item changes certain Blocks",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information",
+  "tooltip.tutorialmod.kohlrabi": "This tastes moderate"
 }
